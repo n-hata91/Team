@@ -1,24 +1,19 @@
-# README
+# メモ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ForgeryJa 日本語faker
+* 姓・名  
+-ForgeryJa(:name).first_name, ForgeryJa(:name).last_name  
+-ForgeryJa(:name).full_name(:to => ForgeryJa::KANA)  
+* 電話番号  
+-ForgeryJa(:mobile).phone_number  
+* 住所  
+-ForgeryJa(:address).full_address  
+* 郵便番号（数字）  
+-Faker::Number.number(digits:3)  
+* メールアドレス  
+-Faker::Internet.email  
 
-Things you may want to cover:
+##
+##
+##
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
