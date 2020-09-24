@@ -1,4 +1,6 @@
-made by sub computer
-onther optino about vim
-this is vim practice data.
-
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+}
