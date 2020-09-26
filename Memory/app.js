@@ -50,7 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/sea.jpg'
     }
   ]
-  cardArray.sort(() => 0.5 - Math.random())
+
+  // cardArray.sort(() => 0.5 - Math.random()) 簡単シャッフル
+  for (let s = cardArray.length - 1; s > 0; s--){
+    //乱数生成を使ってランダムに取り出す値を決める
+    r = Math.floor(Math.random() * (s + 1));
+    //取り出した値と箱の外の先頭の値を交換する
+    tmp = cardArray[s];
+    cardArray[s] = cardArray[r];
+    cardArray[r] = tmp;
+  };
 
   const grid = document.querySelector('.grid')
   const resultDisplay = document.querySelector('#result')
